@@ -3,11 +3,12 @@ import { Manrope, DM_Sans } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { profile } from "@/lib/content";
+import { siteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 const manrope = Manrope({ subsets: ["latin"], display: "swap", variable: "--font-manrope" });
 const dmSans = DM_Sans({ subsets: ["latin"], display: "swap", variable: "--font-dmsans" });
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://deninhoricharddr-svg.github.io/dennis-richard-portfolio/";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "Dennis Richard | Economics · Finance · Data", template: "%s | Dennis Richard" },
