@@ -1,41 +1,31 @@
-# Dennis Richard — Professional Portfolio
+# Dennis Richard — Economist · Financial Analysis · Data Analytics
 
-A responsive professional portfolio spanning **Economics & Research**, **Financial Analysis**, and **Data Analytics & Data Science**. The site contains verified case studies, a published article, and nine transparently labelled future projects.
+This repository contains a professional portfolio platform for Dennis Richard.
 
-## Website
-- Home: `index.html`
-- Selected work: `work.html`
-- Project roadmap: `projects.html`
+## Current development structure
 
-The site is static HTML, CSS and JavaScript and does not require installation.
+- **[Modern Next.js application](site/)** — the next-generation portfolio with React, TypeScript, Tailwind CSS, structured project pages, an optional server-side contact system, SEO and responsive design.
+- **[Modern application setup and deployment guide](site/README.md)** — instructions for Netlify, media, CV, environment variables and quality checks.
+- **Legacy static portfolio** — the original root-level `index.html`, `work.html`, `projects.html`, and `assets/` remain intact while the replacement is tested.
 
-## Publish on GitHub Pages
-1. Open this repository's **Settings → Pages**.
-2. Set **Build and deployment → Source** to **GitHub Actions**.
-3. The workflow `.github/workflows/deploy.yml` runs after changes to the `main` branch. It can also be started manually under Actions.
-4. When GitHub reports a successful deployment, the intended URL is:
-   https://deninhoricharddr-svg.github.io/dennis-richard-portfolio/
+**Important:** The modern application has been committed to GitHub, but is not automatically published by GitHub Pages. GitHub Pages supports the old static pages but does not run Next.js server-side API routes.
 
-Adding the workflow alone does **not** establish that the website is live.
+## Deploy the modern site
 
-## Your photograph
-Upload a genuine portrait named **`dennis-richard-headshot.jpg`** into the **`assets/`** folder. The homepage automatically shows it inside the circular portrait area in place of the initials DR. A clear, well-lit portrait at least 1000px wide, with face and shoulders visible, works well. Do not upload identification documents.
+1. Import `deninhoricharddr-svg/dennis-richard-portfolio` into Netlify.
+2. Set the Netlify **Base directory** to **`site`**.
+3. Build command: `npm run build`.
+4. After a successful deployment, set `NEXT_PUBLIC_SITE_URL` to the real public HTTPS address, and redeploy.
+5. Review all pages on desktop and mobile before replacing links to the previous site.
 
-## Your introduction video
-Record a 45–75 second **landscape (16:9)** introduction with clear audio, export to MP4/H.264, and upload it as **`assets/dennis-richard-introduction.mp4`**. The video player automatically appears in the introduction section after upload. Add captions or a transcript when ready. For very large files, use a video streaming host instead.
+See [the complete deployment guide](site/README.md). The secure contact endpoint needs additional email and anti-spam credentials and gracefully falls back to direct email until activated.
 
-Suggested video structure: who you are; your economics and research background; one specific example of analytical work; the kind of economics, finance and data problems you want to tackle.
+## Media
 
-## Public CV
-The current **Request CV** link starts an email instead of distributing an unverified PDF. Once your up-to-date public CV is approved, add it to `assets/` and update this link. Do not publicly include referee phone numbers or private addresses.
+The new application reserves space for a real headshot and introduction video. Upload publication-ready assets into `site/public/media/`, then enable their corresponding paths in `site/lib/content.ts`. No artificial portrait or invented professional claims are used.
 
-## Credibility rules
-- Only mark projects complete once you have independently executed, validated and documented them.
-- Respect confidentiality of Roads Authority records, consulting work and research participants.
-- Label assumed values, demonstrations and scenarios; do not misrepresent them as real measured outcomes.
-- Maintain a clear separation between published commentary, institutional experience and learning projects.
+## Project evidence
 
-## Tech
-HTML, CSS, JavaScript, and GitHub Actions. No analytics tracking, cookie banners or backend service currently needed. Google Fonts are externally hosted and can be replaced with system fonts if preferred.
+Nine high-impact economics, financial analysis and data analytics project briefs are maintained as **planned**. They will be published as completed only when independent analysis, source files, tests and interpretation exist.
 
-© Dennis Richard.
+This is a professional portfolio and technical learning platform, not a collection of prefilled fake case studies.
