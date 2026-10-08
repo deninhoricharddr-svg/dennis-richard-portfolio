@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {ArrowRight, ArrowUpRight, BookOpenText, ChartNoAxesCombined, ChevronRight, CirclePlay, Database, Download, ExternalLink, Globe2, Landmark, Linkedin, MoveUpRight, Play, ScrollText, Sparkles} from "lucide-react";
+import {ArrowRight, ArrowUpRight, ChartNoAxesCombined, CirclePlay, Database, Download, ExternalLink, Globe2, Landmark, MoveUpRight} from "lucide-react";
 import {featuredPublication, profile, projects, tracks} from "@/lib/content";
 import {ProjectCard} from "@/components/project-card";
 import {SectionHeading} from "@/components/section-heading";
