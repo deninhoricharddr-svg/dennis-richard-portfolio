@@ -1,7 +1,7 @@
 import type {Metadata} from "next";
 import Link from "next/link";
 import {notFound} from "next/navigation";
-import {ArrowLeft,ArrowUpRight,Database,FileCheck,Lightbulb,Workflow} from "lucide-react";
+import {ArrowLeft,ArrowUpRight,FileCheck,Lightbulb,Workflow} from "lucide-react";
 import {projects,tracks} from "@/lib/content";
 export function generateStaticParams(){return projects.map(p=>({slug:p.slug}));}
 type Props={params:Promise<{slug:string}>};
