@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deninhoricharddr-svg.github.io/dennis-richard-portfolio/sitemap.xml
